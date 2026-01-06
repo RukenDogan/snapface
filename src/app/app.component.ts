@@ -12,6 +12,8 @@ import { FaceSnap } from './models/face-snap';
 })
 export class AppComponent implements OnInit {
   mySnap!: FaceSnap;
+  myOtherSnap!: FaceSnap;
+  myLastSnap!: FaceSnap;
   
   ngOnInit(): void {
     this.mySnap = new FaceSnap(
@@ -20,6 +22,20 @@ export class AppComponent implements OnInit {
       'https://angular.io/assets/images/logos/angular/angular.png',
       new Date(),
       0
+    );
+    this.myOtherSnap = new FaceSnap(
+      'My second snap',
+      'This is my second snap description',
+      'https://angular.io/assets/images/logos/angular/angular.png',
+      new Date(),
+      78
+    );
+    this.myLastSnap = new FaceSnap(
+      'My last snap',
+      'This is my last snap description',
+      'https://angular.io/assets/images/logos/angular/angular.png',
+      new Date(),
+      26
     );
   }
 }
