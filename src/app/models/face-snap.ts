@@ -7,4 +7,11 @@ export class FaceSnap {
         public snaps: number
     ) {}
 
+    addSnap(): void {
+        this.snaps++;
+    }
+
+    removeSnap(): void {
+        this.snaps--;
+    }
 }
