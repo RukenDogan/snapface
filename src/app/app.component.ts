@@ -19,21 +19,21 @@ export class AppComponent implements OnInit {
     this.mySnap = new FaceSnap(
       'My first snap',
       'This is my first snap description',
-      'https://angular.io/assets/images/logos/angular/angular.png',
+      'https://tse4.mm.bing.net/th/id/OIP.kCydCYlVcKV4uJQTARLJcAHaHT?pid=Api&P=0&w=300&h=300',
       new Date(),
       0
     );
     this.myOtherSnap = new FaceSnap(
       'My second snap',
       'This is my second snap description',
-      'https://angular.io/assets/images/logos/angular/angular.png',
+      'https://imgix.ranker.com/user_node_img/50147/1002928852/original/1002928852-photo-u-27910876?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=200',
       new Date(),
       78
     );
     this.myLastSnap = new FaceSnap(
       'My last snap',
       'This is my last snap description',
-      'https://angular.io/assets/images/logos/angular/angular.png',
+      'https://i.pinimg.com/originals/af/e2/85/afe28514458b03c68eea289007a326e6.jpg',
       new Date(),
       26
     );
