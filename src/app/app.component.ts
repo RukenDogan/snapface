@@ -13,10 +13,6 @@ import { FaceSnap } from './models/face-snap';
 export class AppComponent implements OnInit {
 
   faceSnaps!: FaceSnap[];
-
-  mySnap!: FaceSnap;
-  myOtherSnap!: FaceSnap;
-  myLastSnap!: FaceSnap;
   
   ngOnInit(): void {
     this.faceSnaps = [
@@ -34,18 +30,18 @@ export class AppComponent implements OnInit {
       'https://imgix.ranker.com/user_node_img/50147/1002928852/original/1002928852-photo-u-27910876?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=200',
       new Date(),
       78
-    ),
-    new FaceSnap(
+
+      ),
+      new FaceSnap(
       'My last snap',
       'This is my last snap description',
       'https://i.pinimg.com/originals/af/e2/85/afe28514458b03c68eea289007a326e6.jpg',
       new Date(),
       26
-    ),
-
+      ),
     ];
 
-
+  
 
     this.faceSnaps[1].setLocation('à la montagne');
   }
