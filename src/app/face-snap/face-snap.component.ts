@@ -20,7 +20,7 @@ export class FaceSnapComponent {
 
   snapButtonText!: string;
   userHasSnapped!: boolean;
-  myPrice: number = 0.3367;
+  myPrice: number = 336.75;
 
 
 ngOnInit(): void {
