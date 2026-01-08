@@ -17,8 +17,15 @@ import { NgClass, NgStyle, UpperCasePipe, DatePipe } from '@angular/common';
 export class FaceSnapComponent {
   @Input() faceSnap!: FaceSnap;
 
-  snapButtonText = 'Oh snap!';
-  userHasSnapped = false;
+  snapButtonText!: string;
+  userHasSnapped!: boolean;
+  myLargeNumber: number = 4667916.76;
+
+  
+ngOnInit(): void {
+  this.snapButtonText = 'Oh snap!';
+  this.userHasSnapped = false;
+}
 
 
 
