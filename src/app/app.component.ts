@@ -1,6 +1,4 @@
-import { Component, signal, OnInit } from '@angular/core';
-import { FaceSnapComponent } from './face-snap/face-snap.component';
-import { FaceSnap } from './models/face-snap';
+import { Component } from '@angular/core';
 import { FaceSnapList } from './face-snap-list/face-snap-list';
 
 @Component({

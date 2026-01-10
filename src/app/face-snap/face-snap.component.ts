@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FaceSnap } from '../models/face-snap';
-import { NgClass, NgStyle, UpperCasePipe, DatePipe, PercentPipe, CurrencyPipe } from '@angular/common';
+import { NgClass, NgStyle, UpperCasePipe, DatePipe } from '@angular/common';
 
 
 @Component({
@@ -9,8 +9,7 @@ import { NgClass, NgStyle, UpperCasePipe, DatePipe, PercentPipe, CurrencyPipe } 
     NgStyle,
     NgClass,
     UpperCasePipe,
-    DatePipe,
-    CurrencyPipe
+    DatePipe
     ],
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss',
@@ -20,7 +19,6 @@ export class FaceSnapComponent {
 
   snapButtonText!: string;
   userHasSnapped!: boolean;
-  myPrice: number = 336.75;
 
 
 ngOnInit(): void {
