@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap';
 import { NgClass, NgStyle, UpperCasePipe, DatePipe } from '@angular/common';
 import { FaceSnapsService } from '../services/face-snaps.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 
 @Component({
@@ -11,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
     NgStyle,
     NgClass,
     UpperCasePipe,
-    DatePipe
+    DatePipe,
+    RouterLink
     ],
   templateUrl: './single-face-snap.component.html',
   styleUrl: './single-face-snap.component.scss',
