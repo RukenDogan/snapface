@@ -1,6 +1,10 @@
-<div class="face-snap-card" [ngClass]="{ snapped: userHasSnapped }">
+<div class="face-snap-card">
     <h2>{{ faceSnap.title | uppercase }}</h2>
-  @if (faceSnap.location) {
+    <button (click)="onViewFaceSnap()">VIEW</button>
+</div>
+
+
+  <!-- @if (faceSnap.location) {
     <p>Localisation : {{ faceSnap.location }}</p>
   } @else {
     <p>Localisation non spécifiée</p>
@@ -11,5 +15,4 @@
   <p>
     <button (click)="onSnap()">{{ snapButtonText }}</button>
     <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps +',0)' }">Snaps: {{ faceSnap.snaps }}</span>
-  </p>
-</div>
+  </p> -->
