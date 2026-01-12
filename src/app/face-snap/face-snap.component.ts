@@ -40,13 +40,13 @@ ngOnInit(): void {
   }
 
   unSnap() {
-    this.faceSnap.removeSnap();
+    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'unsnap');
     this.snapButtonText = 'Oh snap!';
     this.userHasSnapped = false;
   }
 
   snap() {
-    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id);
+    this.faceSnapsService.snapFaceSnapById(this.faceSnap.id, 'snap');
     this.snapButtonText = 'Oops unSnap!';
     this.userHasSnapped = true;
   }
